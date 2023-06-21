@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* this ensures padding and border are included in the element's total width and height */
+}
+
+
 .light-text {
   color: #ffffff;
 }
@@ -73,22 +80,22 @@ body {
   min-height: 100vh;
 }
 
-/* .content {
+.content {
   flex-grow: 1;
 }
 
-nav {
+/* nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-}
+} */
 
-#footer a {
+/* #footer a {
   padding: 0 1rem;
-}
+} */
 
-#footer {
+/* #footer {
   width: 100%;
   padding: 1.5rem;
   text-align: center;
@@ -114,48 +121,59 @@ nav {
 
 .wrapper {
   display: flex;
-  width: 100%;
-  position: relative;
+  flex-direction: column; /* this ensures that the footer appears below the content */
+  min-height: 100vh;
 }
 
 #navbar {
-  height: var(--nav-height);
-  position: fixed;
-  right: 0;
+  height: 80px; /* replace this with the actual height of your navbar */
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: #959ead;
   z-index: 5;
 }
 
 #footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: var(--footer-height);
-  z-index: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: var(--fonts);
-  background-color: #ffffff;
+    height: 100px; /* replace this with the actual height of your footer */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: var(--fonts);
+    background-color: #ffffff;
+    z-index: 1000;
 }
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  footer nav a {
+    flex: 1 0 auto; /* This allows the link to grow and shrink as needed, with a base size of auto */
+    text-align: center;
+  }
+}
+
+
 
 #content {
   width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height)); /* calculate the height by removing the heights of the navbar and the footer */
   background-color: #e6e6e6;
 }
 
 #outlet {
-  z-index: -1;
-  margin-top: var(--nav-height);
-  margin-bottom: var(--footer-height);
+  flex-grow: 1; /* this replaces min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* shift the whatsapp icon by the height of the footer */
 #whatsappIcon > img{
-  margin-bottom: var(--footer-height) !important;
+  margin-bottom: 10px;
 }
