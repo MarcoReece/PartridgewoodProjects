@@ -10,7 +10,7 @@ export class EmailService {
   public async sendEmail(subject: string, body: string): Promise<boolean> {
     const response = Email.send({
       SecureToken: '12cd6490-ad1c-4d6e-bd46-ae2af55a94f0',
-      To: 'marcodumbleton1@gmail.com',
+      To: 'partridgewoodprojects@gmail.com',
       From: 'marcodumbleton1@gmail.com',
       Subject: subject,
       Body: body,
