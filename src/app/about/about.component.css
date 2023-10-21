@@ -27,6 +27,14 @@
   margin-right: auto;
 }
 
+img {
+  border-radius: 2%;
+}
+
+p {
+  font-size: large;
+}
+
 @media screen and (max-width: 768px) {
   .about-title {
     width: 50%;
