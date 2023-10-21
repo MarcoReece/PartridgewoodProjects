@@ -15,6 +15,11 @@
   max-width: 100%;
   padding-top: 2rem;
 }
+@media (max-width: 768px) { /* You can adjust the max-width to your specific needs */
+  .container {
+    width: 100%;
+  }
+}
 
 .about-title {
   font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
