@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 75%;
   max-width: 100%;
   padding-top: 2rem;
 }
@@ -25,10 +25,6 @@
   width: 25%;
   margin-left: auto;
   margin-right: auto;
-}
-
-img {
-  border-radius: 2%;
 }
 
 p {
