@@ -34,10 +34,8 @@
 }
 
 .card-body.center-image {
-  display: flex;
   justify-content: center; /* centers child elements horizontally */
   align-items: center; /* centers child elements vertically */
-  height: 16rem; /* adjust this value to suit your design */
 }
 
 .beforeAndAfter {
