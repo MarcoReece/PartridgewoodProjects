@@ -18,7 +18,7 @@
   text-align: right;
   font-style: italic;
   font-family: Georgia, serif;
-  font-size: 3em;
+  font-size: 2.2em;
   padding-top: 1.5rem;
 }
 
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: center; /* centers child elements horizontally */
   align-items: center; /* centers child elements vertically */
-  height: 18rem; /* adjust this value to suit your design */
+  height: 16rem; /* adjust this value to suit your design */
 }
 
 .beforeAndAfter {
@@ -49,4 +49,32 @@
   .beforeAndAfter {
     width: 100%;
   }
+}
+
+.typewritercontainer {
+  display: inline-block;
+  font-family: Georgia, serif;
+  font-size: 1.6em;
+}
+
+.text {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 6s steps(15, end) infinite,
+    cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+/* typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  33.33% { width: 100% }
+  100% { width: 100% }
 }
