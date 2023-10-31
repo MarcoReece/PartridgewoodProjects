@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+/* body {
+  background: #ffffff url(https://t4.ftcdn.net/jpg/01/97/36/41/360_F_197364184_GMEATxvgys4s6AOFoDycPZZeE0oOdMjj.jpg) center center/auto repeat fixed;
+} */
+
 .container {
   display: flex;
   flex-direction: column;
