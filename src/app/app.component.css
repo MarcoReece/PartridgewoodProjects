@@ -104,7 +104,7 @@ body {
 } */
 
 .logo-image {
-  width: 250px;
+  width: 350px;
   height: auto;
 }
 
@@ -126,8 +126,7 @@ body {
 }
 
 #navbar {
-  height: 80px; /* replace this with the actual height of your navbar */
-  position: sticky;
+  height: 120px; /* replace this with the actual height of your navbar */
   top: 0;
   width: 100%;
   background-color: #959ead;
