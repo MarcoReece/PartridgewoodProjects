@@ -80,3 +80,8 @@ form button {
 .icondescription {
   font-size: small;
 }
+
+.map {
+  padding-top: 1.5rem;
+  width: 100%;
+}
