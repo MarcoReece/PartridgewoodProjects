@@ -89,18 +89,19 @@
     ></iframe
   ></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="service-grid pb-5 pt-4">
+  <div class="services-page-wrapper">
+  <div class="service-grid">
     <div class="container">
       <div class="row">
-        <div class="col-xl-12 text-center mb-4">
+        <div class="col-xl-12 text-center mb-5">
           <div class="service-title">
             <h3>Our Services</h3>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row align-items-stretch">
         <div
-          class="col-lg-4 col-md-6 text-center mb-3"
+          class="col-lg-2 col-md-4 col-sm-6 text-center"
           (click)="scrollToPainting()"
         >
           <div class="anchors service-wrap">
@@ -122,7 +123,7 @@
           </div>
         </div>
         <div
-          class="col-lg-4 col-md-6 text-center mb-3"
+          class="col-lg-2 col-md-4 col-sm-6 text-center"
           (click)="scrollToDamp()"
         >
           <div class="anchors service-wrap">
@@ -144,7 +145,7 @@
           </div>
         </div>
         <div
-          class="col-lg-4 col-md-6 text-center mb-3"
+          class="col-lg-2 col-md-4 col-sm-6 text-center"
           (click)="scrollToBuilding()"
         >
           <div class="anchors service-wrap">
@@ -166,7 +167,7 @@
           </div>
         </div>
         <div
-          class="col-lg-4 col-md-6 text-center mb-3"
+          class="col-lg-2 col-md-4 col-sm-6 text-center"
           (click)="scrollToGutters()"
         >
           <div class="anchors service-wrap">
@@ -188,7 +189,7 @@
           </div>
         </div>
         <div
-          class="col-lg-4 col-md-6 text-center mb-3"
+          class="col-lg-2 col-md-4 col-sm-6 text-center"
           (click)="scrollToTiling()"
         >
           <div class="anchors service-wrap">
@@ -210,7 +211,7 @@
           </div>
         </div>
         <div
-          class="col-lg-4 col-md-6 text-center mb-3"
+          class="col-lg-2 col-md-4 col-sm-6 text-center"
           (click)="scrollToDoor()"
         >
           <div class="anchors service-wrap">
@@ -234,36 +235,27 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
+  <div class="service-details-container">
+    <div class="container">
+      <div class="row align-items-stretch">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 1 -->
-          <h2 class="text-decoration-underline">Painting Services</h2>
+          <h2>Painting Services</h2>
           <p>
-            Painting adds contrast and cleanliness to a structure, enhancing its
-            appearance and protecting surfaces. Our painting service involves a
-            systematic approach to ensure a lasting and beautiful finish. The
-            steps of our painting process include:
+            Painting improves a building’s look while protecting its surfaces. Our painting service follows a structured process to ensure a durable, high-quality finish:
           </p>
           <ol>
             <li #paintingSection>
               <h5>Surface Preparation</h5>
               <p>
-                Your home will be pressure washed to remove loose paint, dust
-                and debris. All plaster is checked for cracks and delamination
-                to create a stable surface. All wood work and metal work is
-                sand-prepared to create a surface that is ready for the final
-                product.
+                We pressure-wash the home, repair plaster issues, and sand all wood and metal surfaces to create a stable base that is ready for the final.
               </p>
             </li>
             <li>
               <h5>Primer Application</h5>
               <p>
-                Trimwork, all eaves, gutters, down-pipes, facia boards, window
-                frames, doors and door frames are prepared and painted using the
-                appropriate primer, if nessesary, followed by a two coat
-                application best suited for the specific surface to be treated.
+                Where needed, we apply the correct primer to areas like trim, eaves, gutters, doors, and frames, followed by two coats suited to each surface.
               </p>
             </li>
             <li>
@@ -294,32 +286,28 @@
             <li>
               <h5>Inspect and Touch Up</h5>
               <p>
-                After the paint has dried, our team conducts a thorough
-                inspection of the painted surfaces. Any imperfections or areas
-                that require touch-up are identified and addressed to achieve a
-                flawless result.
+                Once dry, we inspect all painted areas and fix any imperfections to ensure a flawless finish.
               </p>
             </li>
           </ol>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 2 -->
           <img
             src="assets/pictures/painted-house.jpg"
             alt="Painted house"
-            style="max-width: 100%; max-height: 100%"
           />
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row align-items-stretch">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 3 -->
-          <h2 class="text-decoration-underline">
+          <h2>
             Damp and Water Proofing Services
           </h2>
           <p>
@@ -353,23 +341,22 @@
           </ol>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 4 -->
           <img
             src="assets/pictures/dampproofdiagram.png"
             alt="Water proofing"
-            style="max-width: 100%; max-height: 100%"
           />
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row align-items-stretch">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 1 -->
-          <h3 class="text-decoration-underline">
+          <h3>
             Building and Alteration Services
           </h3>
           <p #buildingSection class="fs-5 lh-lg">
@@ -380,23 +367,22 @@
           </p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 2 -->
           <img
             src="assets/pictures/building-alterations.jpg"
             alt="building alterations"
-            style="max-width: 100%; max-height: 100%"
           />
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row align-items-stretch">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 1 -->
-          <h3 class="text-decoration-underline">Gutter Services</h3>
+          <h3>Gutter Services</h3>
           <p #guttersSection class="fs-5 lh-lg">
             We provide the installation of Chromadek guttering to homes and
             industrial buildings. There are multiple choices of colours
@@ -404,23 +390,22 @@
           </p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 2 -->
           <img
             src="assets/pictures/Gutter-Diagram.png"
             alt="gutters"
-            style="max-width: 100%; max-height: 100%"
           />
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row align-items-stretch">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 1 -->
-          <h3 class="text-decoration-underline">Tiling Services</h3>
+          <h3>Tiling Services</h3>
           <p>
             Tiling adds aesthetic appeal and functionality to various areas of
             your property. The tiling process consists of these steps:
@@ -471,23 +456,22 @@
           </ol>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 2 -->
           <img
             src="assets/pictures/floor-tilingjpg.jpg"
             alt="Tiling"
-            style="max-width: 100%; max-height: 100%"
           />
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row align-items-stretch">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 2: Installation of Doors and Windows -->
-          <h3 class="text-decoration-underline">
+          <h3>
             Installation of Doors and Windows
           </h3>
           <p #doorSection class="fs-5 lh-lg">
@@ -500,16 +484,17 @@
           </p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4">
         <div class="block">
           <!-- Content for Block 2 -->
           <img
             src="assets/pictures/29.jpg"
             alt="installation of doors and windows"
-            style="max-width: 100%; max-height: 100%"
           />
         </div>
       </div>
     </div>
+    </div>
+  </div>
   </div>
 </body>

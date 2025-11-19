@@ -1,25 +1,55 @@
 import { Injectable } from '@angular/core';
-declare let Email: any;
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Injectable({
   providedIn: 'root',
 })
 export class EmailService {
-  constructor() {}
+  private readonly SERVICE_ID = 'service_0c5w9cj';
+  private readonly TEMPLATE_ID = 'template_yeeife1';
+  private readonly PUBLIC_KEY = 'mjvU9i_2LyyusUOXo';
 
-  public async sendEmail(subject: string, body: string): Promise<boolean> {
-    const response = Email.send({
-      SecureToken: '12cd6490-ad1c-4d6e-bd46-ae2af55a94f0',
-      To: 'marcodumbleton1@gmail.com',
-      From: 'marcodumbleton1@gmail.com',
-      Subject: subject,
-      Body: body,
-    }).then((message: any) => window.alert(message));
+  constructor() {
+    // Initialize EmailJS with your public key
+    emailjs.init(this.PUBLIC_KEY);
+  }
 
-    if (response === 'OK') {
-      return true;
-    } else {
-      return false;
+  public async sendEmail(
+    name: string,
+    email: string,
+    phone: string,
+    message: string
+  ): Promise<{ success: boolean; error?: string }> {
+    try {
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        phone: phone,
+        message: message,
+        to_email: 'partridgewoodprojects@gmail.com', // Recipient email
+      };
+
+      const response = await emailjs.send(
+        this.SERVICE_ID,
+        this.TEMPLATE_ID,
+        templateParams,
+        this.PUBLIC_KEY
+      );
+
+      if (response.status === 200) {
+        return { success: true };
+      } else {
+        return { success: false, error: 'Failed to send email' };
+      }
+    } catch (error: any) {
+      console.error('EmailJS error:', error);
+      return {
+        success: false,
+        error:
+          error.text ||
+          error.message ||
+          'An error occurred while sending the email',
+      };
     }
   }
 }

@@ -17,8 +17,8 @@ export class ContactComponent implements OnInit {
   constructor(private fb: FormBuilder, private emailService: EmailService) {}
 
   emailSending = false;
-  emailSuccesful = false;
-  error: any;
+  emailSuccessful = false;
+  error: string | null = null;
 
   // Added these so you can get the individual form controls and check their values and if they are valid
   get nameFc() {
@@ -47,10 +47,44 @@ export class ContactComponent implements OnInit {
   }
 
   // Calling email service
-  public sendEmail() {
-    this.emailService.sendEmail(
-      'New Website Contact Form Enquiry',
-      `Name: ${this.nameFc?.value}<br>Email: ${this.emailFc?.value}<br>Phone: ${this.contactNumberFc?.value}<br>Message: ${this.messageFc?.value}`
-    );
+  public async sendEmail(event: Event) {
+    event.preventDefault();
+    
+    if (this.contactForm.invalid) {
+      // Mark all fields as touched to show validation errors
+      Object.keys(this.contactForm.controls).forEach(key => {
+        this.contactForm.get(key)?.markAsTouched();
+      });
+      return;
+    }
+
+    this.emailSending = true;
+    this.emailSuccessful = false;
+    this.error = null;
+
+    try {
+      const result = await this.emailService.sendEmail(
+        this.nameFc?.value || '',
+        this.emailFc?.value || '',
+        this.contactNumberFc?.value || '',
+        this.messageFc?.value || ''
+      );
+
+      if (result.success) {
+        this.emailSuccessful = true;
+        this.contactForm.reset();
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          this.emailSuccessful = false;
+        }, 5000);
+      } else {
+        this.error = result.error || 'Failed to send email. Please try again.';
+      }
+    } catch (error: any) {
+      this.error = 'An unexpected error occurred. Please try again later.';
+      console.error('Error sending email:', error);
+    } finally {
+      this.emailSending = false;
+    }
   }
 }

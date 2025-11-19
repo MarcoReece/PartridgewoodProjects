@@ -6,7 +6,7 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -20,7 +20,7 @@ body {
 }
 
 :root {
-  --nav-height: 5rem;
+  --nav-height: 5.625rem;
   --footer-height: 4.5rem;
   --fonts: "Roboto Slab", serif;
 }

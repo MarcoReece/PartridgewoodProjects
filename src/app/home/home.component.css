@@ -4,14 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e6e6e6;
+}
+
 .c-item {
-  height: 480px;
+  height: 500px;
   padding-bottom: 3rem;
 }
 
 .c-img {
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.95);
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .c-img {
+  transform: scale(1.02);
 }
 
 .header1 {
@@ -20,6 +30,8 @@
   font-family: Georgia, serif;
   font-size: 2.2em;
   padding-top: 1.5rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
 }
 
 .header2 {
@@ -27,26 +39,62 @@
   display: inline; /* make this element inline so it can appear on the same line as the text */
 }
 
-
 .card {
   width: 100%;
   border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.card-body {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .card-body.center-image {
-  padding-top: 2em;
+  padding: 1.5rem;
   justify-content: center; /* centers child elements horizontally */
   align-items: center; /* centers child elements vertically */
+}
+
+.card.align-items-center .card-body {
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .beforeAndAfter {
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  display: block;
+  object-fit: contain;
+}
+
+.card:hover .beforeAndAfter {
+  transform: scale(1.02);
 }
 
 @media screen and (max-width: 500px) {
   .beforeAndAfter {
     width: 100%;
+  }
+  
+  .card {
+    border-radius: 8px;
   }
 }
 
@@ -54,6 +102,7 @@
   display: inline-block;
   font-family: Georgia, serif;
   font-size: 1.6em;
+  margin-top: 1rem;
 }
 
 .text {
@@ -76,4 +125,74 @@
   0% { width: 0 }
   33.33% { width: 100% }
   100% { width: 100% }
+}
+
+/* Modern spacing for content sections */
+.container-fluid {
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-bottom: 2rem;
+  align-items: stretch;
+  gap: 0;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.col-lg-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .row > .col-lg-6:first-child {
+    padding-right: 0.75rem;
+  }
+  
+  .row > .col-lg-6:last-child {
+    padding-left: 0.75rem;
+  }
+}
+
+/* Improve typography in "Why choose us" section */
+.card-body h2 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.card-body p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Carousel improvements */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  width: 24px;
+  border-radius: 6px;
 }

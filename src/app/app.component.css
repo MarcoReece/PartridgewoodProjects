@@ -42,6 +42,26 @@ a.unstyle-link {
   color: none;
 }
 
+#nav-items-lg a.unstyle-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+#nav-items-lg a.unstyle-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+#nav-items-lg a.unstyle-link.active-route {
+  background-color: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  color: white !important;
+}
+
 @media (max-width: 768px) {
   #nav-items-lg {
     display: none !important;
@@ -56,7 +76,27 @@ a.unstyle-link {
 
 .active-route {
   font-weight: 600 !important;
-  text-shadow: 1px 1px 1px #000000 !important;
+  color: white !important;
+}
+
+#contact-button {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem !important;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: #ffffff !important;
+}
+
+#contact-button a {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
 }
 
 .active-route-contact {
@@ -69,8 +109,36 @@ a.unstyle-link {
   background-color: #dadada;
 }
 
+.dropdown-item {
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  padding-left: 2rem;
+}
+
 .dropdown-item:active {
   background-color: #9987a9;
+}
+
+.dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: none;
+  margin-top: 0.5rem;
+}
+
+#nav-items-dropdown {
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+#nav-items-dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -103,8 +171,13 @@ body {
 } */
 
 .logo-image {
-  width: 315px;
+  width: 280px;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
 }
 
 #floating-image {
@@ -125,11 +198,18 @@ body {
 }
 
 #navbar {
-  height: 120px; /* replace this with the actual height of your navbar */
+  height: 90px;
   top: 0;
   width: 100%;
   background-color: #959ead;
   z-index: 5;
+  padding: 0 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#navbar .navbar {
+  padding: 0;
 }
 
 #footer {
@@ -139,7 +219,7 @@ body {
   background-position: center;
   background-size: cover;
   font-family: var(--fonts);
-  background-color: #ffffff;
+  background-color: #959ead;
   z-index: 1000;
 }
 
@@ -161,7 +241,7 @@ footer nav {
   min-height: calc(
     100vh - var(--nav-height) - var(--footer-height)
   ); /* calculate the height by removing the heights of the navbar and the footer */
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 
 #outlet {
