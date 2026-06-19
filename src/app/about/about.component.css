@@ -5,9 +5,9 @@
   box-sizing: border-box;
 }
 
-/* body {
-  background: #ffffff url(https://t4.ftcdn.net/jpg/01/97/36/41/360_F_197364184_GMEATxvgys4s6AOFoDycPZZeE0oOdMjj.jpg) center center/auto repeat fixed;
-} */
+.about-page {
+  min-height: 100%;
+}
 
 .container {
   display: flex;
@@ -19,7 +19,8 @@
   max-width: 100%;
   padding-top: 2rem;
 }
-@media (max-width: 768px) { /* You can adjust the max-width to your specific needs */
+
+@media (max-width: 768px) {
   .container {
     width: 100%;
   }

@@ -1,10 +1,7 @@
-import { EmailService } from './../_services/email.service';
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { EmailService } from '../_services/email.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -13,76 +10,69 @@ import {
 })
 export class ContactComponent implements OnInit {
   contactForm!: FormGroup;
-
-  constructor(private fb: FormBuilder, private emailService: EmailService) {}
-
   emailSending = false;
   emailSuccessful = false;
-  error: string | null = null;
+  error = '';
 
-  // Added these so you can get the individual form controls and check their values and if they are valid
+  constructor(
+    private emailService: EmailService,
+    private formBuilder: FormBuilder,
+    private title: Title,
+    private meta: Meta
+  ) {}
+
   get nameFc() {
     return this.contactForm.get('name');
-  }
-
-  get contactNumberFc() {
-    return this.contactForm.get('contactNumber');
   }
 
   get emailFc() {
     return this.contactForm.get('email');
   }
 
-  get messageFc() {
-    return this.contactForm.get('message');
+  get contactNumberFc() {
+    return this.contactForm.get('contactNumber');
   }
 
-  ngOnInit(): void {
-    this.contactForm = this.fb.group({
-      name: [null, Validators.required],
-      contactNumber: [null, Validators.required],
-      email: [null, [Validators.required, Validators.email]],
-      message: [null],
+  ngOnInit() {
+    this.contactForm = this.formBuilder.group({
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      contactNumber: ['', [Validators.required]],
+      message: [''],
     });
+
+    this.title.setTitle('Contact Us | Partridgewood Projects - Building & Renovation Johannesburg');
+    this.meta.updateTag({ name: 'description', content: 'Contact Partridgewood Projects in Johannesburg for a free quote. Call 061 428 4712, email partridgewoodprojects@gmail.com, or message us on WhatsApp.' });
+    this.meta.updateTag({ property: 'og:title', content: 'Contact Us | Partridgewood Projects - Building & Renovation Johannesburg' });
+    this.meta.updateTag({ property: 'og:description', content: 'Contact Partridgewood Projects in Johannesburg for a free quote on building, painting, damp proofing, tiling, and more.' });
+    this.meta.updateTag({ name: 'twitter:title', content: 'Contact Us | Partridgewood Projects - Building & Renovation Johannesburg' });
+    this.meta.updateTag({ name: 'twitter:description', content: 'Contact Partridgewood Projects in Johannesburg for a free quote on building, painting, damp proofing, tiling, and more.' });
   }
 
-  // Calling email service
-  public async sendEmail(event: Event) {
+  async sendEmail(event: Event) {
     event.preventDefault();
-    
+
     if (this.contactForm.invalid) {
-      // Mark all fields as touched to show validation errors
-      Object.keys(this.contactForm.controls).forEach(key => {
-        this.contactForm.get(key)?.markAsTouched();
-      });
+      this.contactForm.markAllAsTouched();
       return;
     }
 
     this.emailSending = true;
+    this.error = '';
     this.emailSuccessful = false;
-    this.error = null;
+
+    const { name, email, contactNumber, message } = this.contactForm.value;
 
     try {
-      const result = await this.emailService.sendEmail(
-        this.nameFc?.value || '',
-        this.emailFc?.value || '',
-        this.contactNumberFc?.value || '',
-        this.messageFc?.value || ''
-      );
-
+      const result = await this.emailService.sendEmail(name, email, contactNumber, message);
       if (result.success) {
         this.emailSuccessful = true;
         this.contactForm.reset();
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          this.emailSuccessful = false;
-        }, 5000);
       } else {
-        this.error = result.error || 'Failed to send email. Please try again.';
+        this.error = result.error || 'Failed to send email. Please try again later.';
       }
-    } catch (error: any) {
-      this.error = 'An unexpected error occurred. Please try again later.';
-      console.error('Error sending email:', error);
+    } catch (err: any) {
+      this.error = err?.message || 'Failed to send email. Please try again later.';
     } finally {
       this.emailSending = false;
     }

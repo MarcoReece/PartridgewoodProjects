@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-photos',
@@ -38,9 +39,15 @@ export class PhotosComponent implements OnInit {
   currentImageIndex: number = 0;
   isLightboxOpen: boolean = false;
 
-  constructor() { }
+  constructor(private title: Title, private meta: Meta) { }
 
   ngOnInit() {
+    this.title.setTitle('Photo Gallery | Partridgewood Projects - Building & Renovation Work in Johannesburg');
+    this.meta.updateTag({ name: 'description', content: 'View our portfolio of building, painting, damp proofing, tiling, and renovation projects in Johannesburg. Partridgewood Projects photo gallery.' });
+    this.meta.updateTag({ property: 'og:title', content: 'Photo Gallery | Partridgewood Projects - Building & Renovation Work in Johannesburg' });
+    this.meta.updateTag({ property: 'og:description', content: 'View our portfolio of building, painting, damp proofing, tiling, and renovation projects in Johannesburg.' });
+    this.meta.updateTag({ name: 'twitter:title', content: 'Photo Gallery | Partridgewood Projects - Building & Renovation Work in Johannesburg' });
+    this.meta.updateTag({ name: 'twitter:description', content: 'View our portfolio of building, painting, damp proofing, tiling, and renovation projects in Johannesburg.' });
   }
 
   openLightbox(index: number) {
@@ -80,12 +87,9 @@ export class PhotosComponent implements OnInit {
   }
 
   getImageIndex(imageName: string): number {
-    // Extract the number from the image name (e.g., "1.jpg" -> 1)
     const match = imageName.match(/(\d+)\.jpg/);
     if (!match) return 0;
     const imageNum = parseInt(match[1], 10);
-    
-    // Find the index in the images array
     const imagePath = `assets/pictures/${imageNum}.jpg`;
     return this.images.indexOf(imagePath);
   }

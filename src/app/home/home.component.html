@@ -1,224 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W8198BVB2G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#hero-carousel"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#hero-carousel"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#hero-carousel"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
 
-      gtag("config", "G-W8198BVB2G");
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TVMZ9K89");
-    </script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager -->
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Partridgewood Projects",
-        "description": "We offer a range of professional services to enhance your property.",
-        "url": "https://www.partridgewoodprojects.co.za/services",
-        "image": "https://www.partridgewoodprojects.co.za/assets/pictures/2.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "26 Brackenhill Road",
-          "addressLocality": "Johannesburg",
-          "addressRegion": "Guateng",
-          "postalCode": "2191",
-          "addressCountry": "South Africa"
-        },
-        "telephone": "+27614284712",
-        "email": "partridgewoodprojects@gmail.com",
-        "openingHours": "Mo-Fr 07:30-17:00",
-        "hasMap": "https://maps.app.goo.gl/NBAb66PP7Pyj8Tmx8",
-        "serviceArea": {
-          "@type": "GeoShape",
-          "polygon": "-25.979174 28.130686, -26.021928 27.987108, -26.101618 27.968627, -26.189876 28.037007, -26.163008 28.084318, -26.110247 28.093928, -26.019936 28.149371",
-          "box": "-26.212913 28.146607, -25.983289 27.944816"
-        }
-      }
-    </script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="stylesheet" href="home.component.css" />
-    <meta name="Construction Company" content="Partridgewood Projects Homepage" />
-    <title>Partridgewood Projects Homepage</title>
-    <!-- Google tag (gtag.js) -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-TVMZ9K89"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item">
-          <img
-            src="assets/pictures/15.jpg"
-            class="d-block w-100 c-img"
-            alt="Slide 1"
-          />
-        </div>
-        <div class="carousel-item c-item">
-          <img
-            src="assets/pictures/17.jpg"
-            class="d-block w-100 c-img"
-            alt="Slide 2"
-          />
-        </div>
-        <div class="carousel-item c-item">
-          <img
-            src="assets/pictures/6.jpg"
-            class="d-block w-100 c-img"
-            alt="Slide 3"
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#hero-carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#hero-carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img
+        src="assets/pictures/15.jpg"
+        class="d-block w-100 c-img"
+        alt="Professional house painting service in Johannesburg - exterior painting project by Partridgewood Projects"
+      />
     </div>
+    <div class="carousel-item c-item">
+      <img
+        src="assets/pictures/17.jpg"
+        class="d-block w-100 c-img"
+        alt="Building renovation and alterations project in Johannesburg by Partridgewood Projects"
+      />
+    </div>
+    <div class="carousel-item c-item">
+      <img
+        src="assets/pictures/6.jpg"
+        class="d-block w-100 c-img"
+        alt="Quality tiling and flooring installation service in Johannesburg by Partridgewood Projects"
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#hero-carousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#hero-carousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="card">
-            <div class="card-body center-image">
-              <img
-                class="beforeAndAfter"
-                src="assets/pictures/before&after2.png"
-                alt="Before and after transformation"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="card align-items-center">
-            <div class="card-body">
-              <div class="header1">
-                <span style="color: #626463">Turning your </span
-                ><span style="color: #77212e">visions</span
-                ><span style="color: #626463"
-                  >,<br />
-                  into </span
-                ><span style="color: #77212e">reality</span
-                ><span style="color: #626463">...</span>
-                <!-- <span class="header2"><br>Partridgewood Projects</span> -->
-              </div>
-              <div class="typewritercontainer">
-                <p class="text">Partridgewood Projects</p>
-              </div>
-            </div>
-          </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="card">
+        <div class="card-body center-image">
+          <img
+            class="beforeAndAfter"
+            src="assets/pictures/before&after2.png"
+            alt="Before and after home renovation transformation - Partridgewood Projects building services in Johannesburg"
+          />
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="card">
-            <div class="card-body text-center">
-              <h2 class="pb-3">Why choose us?</h2>
-              <p>
-                With 20 years of experience, our skilled teams deliver quality
-                work in the renovating of homes, industrial buildings and office
-                blocks. Our transparent and reliable approach, coupled with our
-                use of quality materials and paint, guarentees a successful
-                outcome! We prioritize client satisfaction through open
-                communication and attention to detail, ensuring precision and
-                exceptional craftsmanship in every project.
-              </p>
-            </div>
+    </div>
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="card align-items-center">
+        <div class="card-body">
+          <div class="header1">
+            <span style="color: #626463">Turning your </span
+            ><span style="color: #77212e">visions</span
+            ><span style="color: #626463"
+              >,<br />
+              into </span
+            ><span style="color: #77212e">reality</span
+            ><span style="color: #626463">...</span>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-body center-image">
-              <img
-                class="beforeAndAfter"
-                src="assets/pictures/before&after1.png"
-                alt="Before and after transformation"
-              />
-            </div>
+          <div class="typewritercontainer">
+            <p class="text">Partridgewood Projects</p>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="card">
+        <div class="card-body text-center">
+          <h2>Why choose us?</h2>
+          <p>
+            With 20 years of experience, our skilled teams deliver quality
+            work in the renovating of homes, industrial buildings and office
+            blocks in Johannesburg. Our transparent and reliable approach, coupled with our
+            use of quality materials and paint, guarantees a successful
+            outcome! We prioritize client satisfaction through open
+            communication and attention to detail, ensuring precision and
+            exceptional craftsmanship in every project.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body center-image">
+          <img
+            class="beforeAndAfter"
+            src="assets/pictures/before&after1.png"
+            alt="Before and after building alteration project - Partridgewood Projects construction services in Johannesburg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
