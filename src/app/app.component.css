@@ -14,18 +14,18 @@ a.unstyle-link {
   border-radius: var(--radius-sm);
   transition: var(--transition);
   letter-spacing: 0.3px;
-  color: rgba(255,255,255,0.85);
+  color: var(--text);
 }
 
 #nav-items-lg a.unstyle-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--primary);
 }
 
 #nav-items-lg a.unstyle-link.active-route {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(119, 33, 46, 0.08);
   font-weight: 600;
-  color: white;
+  color: var(--primary);
 }
 
 @media (max-width: 991px) {
@@ -65,7 +65,8 @@ a.unstyle-link {
 }
 
 .nav-menu-active {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(119, 33, 46, 0.08);
+  color: var(--primary) !important;
 }
 
 .dropdown-item {
@@ -73,6 +74,7 @@ a.unstyle-link {
   transition: var(--transition);
   font-weight: 500;
   font-size: 0.9rem;
+  color: var(--text);
 }
 
 .dropdown-item:hover {
@@ -84,7 +86,7 @@ a.unstyle-link {
 .dropdown-menu {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
-  border: none;
+  border: 1px solid var(--gray-100);
   margin-top: 0.75rem;
   padding: 0.5rem;
 }
@@ -96,7 +98,7 @@ a.unstyle-link {
 }
 
 #nav-items-dropdown:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .logo-image {
@@ -113,7 +115,7 @@ a.unstyle-link {
 }
 
 .logo-image:hover {
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
 #floating-image {
@@ -144,16 +146,16 @@ a.unstyle-link {
   height: var(--nav-height);
   top: 0;
   width: 100%;
-  background-color: #4a5b6e;
+  background-color: #f8f9fa;
   z-index: 50;
   padding: 0 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   transition: var(--transition);
 }
 
 #footer {
   width: 100%;
-  background-color: #4a5b6e;
+  background-color: #2c3e50;
   font-family: var(--font-heading);
   z-index: 10;
   padding: 3rem 2rem 1.5rem;

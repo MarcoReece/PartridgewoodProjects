@@ -229,8 +229,6 @@
 }
 
 .ba-card {
-  border-radius: var(--radius-md);
-  overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
@@ -244,6 +242,7 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: var(--radius-md);
 }
 
 /* ========== Testimonials ========== */
