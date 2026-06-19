@@ -14,8 +14,8 @@
         <h1 class="hero-title">Expert Building & Renovation Services in Johannesburg</h1>
         <p class="hero-text">Professional painting, damp proofing, tiling, and structural alterations for homes and businesses.</p>
         <div class="hero-cta">
-          <a routerLink="contact" class="btn-primary-custom">Get a Free Quote</a>
-          <a routerLink="services" class="btn-outline-custom">Our Services</a>
+          <a (click)="navigateTo('contact')" class="btn-primary-custom">Get a Free Quote</a>
+          <a (click)="navigateTo('services')" class="btn-outline-custom">Our Services</a>
         </div>
       </div>
     </div>
@@ -26,8 +26,8 @@
         <h1 class="hero-title">Transform Your Property with Premium Craftsmanship</h1>
         <p class="hero-text">From complete home renovations to specialist damp proofing — we deliver results that last.</p>
         <div class="hero-cta">
-          <a routerLink="contact" class="btn-primary-custom">Get a Free Quote</a>
-          <a routerLink="photos" class="btn-outline-custom">View Our Work</a>
+          <a (click)="navigateTo('contact')" class="btn-primary-custom">Get a Free Quote</a>
+          <a (click)="navigateTo('photos')" class="btn-outline-custom">View Our Work</a>
         </div>
       </div>
     </div>
@@ -38,8 +38,8 @@
         <h1 class="hero-title">Professional Tiling, Gutters & More</h1>
         <p class="hero-text">Quality materials, skilled teams, and transparent pricing for every project.</p>
         <div class="hero-cta">
-          <a routerLink="contact" class="btn-primary-custom">Get a Free Quote</a>
-          <a routerLink="services" class="btn-outline-custom">Our Services</a>
+          <a (click)="navigateTo('contact')" class="btn-primary-custom">Get a Free Quote</a>
+          <a (click)="navigateTo('services')" class="btn-outline-custom">Our Services</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
     <p class="section-subtitle">Comprehensive building and renovation solutions for homes and businesses across Johannesburg</p>
 
     <div class="services-grid">
-      <div class="service-card" routerLink="services">
+      <div class="service-card" (click)="navigateTo('services')">
         <div class="service-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
@@ -73,7 +73,7 @@
         <p>Interior and exterior painting with premium finishes</p>
       </div>
 
-      <div class="service-card" routerLink="services">
+      <div class="service-card" (click)="navigateTo('services')">
         <div class="service-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -83,7 +83,7 @@
         <p>Rising damp treatment and waterproofing solutions</p>
       </div>
 
-      <div class="service-card" routerLink="services">
+      <div class="service-card" (click)="navigateTo('services')">
         <div class="service-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="18" height="18" rx="2"/>
@@ -95,7 +95,7 @@
         <p>Structural changes, extensions, and bathroom installations</p>
       </div>
 
-      <div class="service-card" routerLink="services">
+      <div class="service-card" (click)="navigateTo('services')">
         <div class="service-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M2 20h20M4 20V8a2 2 0 012-2h12a2 2 0 012 2v12"/>
@@ -106,7 +106,7 @@
         <p>Chromadek gutter installation in multiple colours</p>
       </div>
 
-      <div class="service-card" routerLink="services">
+      <div class="service-card" (click)="navigateTo('services')">
         <div class="service-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="3" y="3" width="18" height="18" rx="2"/>
@@ -117,7 +117,7 @@
         <p>Floor and wall tiling with precision installation</p>
       </div>
 
-      <div class="service-card" routerLink="services">
+      <div class="service-card" (click)="navigateTo('services')">
         <div class="service-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="2"/>
@@ -132,7 +132,7 @@
       </div>
     </div>
 
-    <a routerLink="services" class="btn-primary-custom" style="margin-top: 1rem;">View All Services</a>
+    <a (click)="navigateTo('services')" class="btn-primary-custom" style="margin-top: 1rem;">View All Services</a>
   </div>
 </section>
 
@@ -207,7 +207,7 @@
       </div>
     </div>
 
-    <a routerLink="photos" class="btn-primary-custom" style="margin-top: 1rem;">View More Projects</a>
+    <a (click)="navigateTo('photos')" class="btn-primary-custom" style="margin-top: 1rem;">View More Projects</a>
   </div>
 </section>
 
@@ -254,7 +254,7 @@
     <h2 class="cta-title">Ready to Start Your Project?</h2>
     <p class="cta-text">Get in touch for a free, no-obligation quote. We'll help bring your vision to life.</p>
     <div class="cta-buttons">
-      <a routerLink="contact" class="btn-primary-custom" style="background: white; color: var(--primary); box-shadow: 0 4px 16px rgba(0,0,0,0.15);">Get a Free Quote</a>
+      <a (click)="navigateTo('contact')" class="btn-primary-custom" style="background: white; color: var(--primary); box-shadow: 0 4px 16px rgba(0,0,0,0.15);">Get a Free Quote</a>
       <a href="tel:+27614284712" class="btn-outline-custom" style="border-color: rgba(255,255,255,0.6);">Call 061 428 4712</a>
     </div>
   </div>
