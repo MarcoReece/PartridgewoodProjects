@@ -1,16 +1,17 @@
 <div class="wrapper">
   <div id="content">
-    <nav id="navbar" class="d-flex align-items-center justify-content-between">
-      <ul id="nav-items-lg" class="d-flex m-0 list-unstyled align-items-center">
-        <li class="me-4">
-          <a (click)="homeReload()" class="d-block">
-            <img
-              src="assets/pictures/PWPlogo.png"
-              alt="Partridgewood Projects Logo"
-              class="logo-image"
-            />
-          </a>
-        </li>
+    <nav id="navbar" class="d-flex align-items-center">
+      <div class="nav-left">
+        <a (click)="homeReload()" class="d-inline-block">
+          <img
+            src="assets/pictures/PWPlogo.png"
+            alt="Partridgewood Projects Logo"
+            class="logo-image"
+          />
+        </a>
+      </div>
+
+      <ul id="nav-items-lg" class="d-flex m-0 list-unstyled align-items-center nav-center">
         <li>
           <a class="unstyle-link" routerLink="home" routerLinkActive="active-route">Home</a>
         </li>
@@ -24,9 +25,12 @@
           <a class="unstyle-link" routerLink="about" routerLinkActive="active-route">About us</a>
         </li>
       </ul>
-      <button routerLink="contact" id="contact-button" class="btn">
-        <a class="unstyle-link">Free Quote</a>
-      </button>
+
+      <div class="nav-right">
+        <button routerLink="contact" id="contact-button" class="btn">
+          <a class="unstyle-link">Free Quote</a>
+        </button>
+      </div>
 
       <ul id="nav-items-sm" class="m-0 list-unstyled align-items-center justify-content-between d-none w-100">
         <li>

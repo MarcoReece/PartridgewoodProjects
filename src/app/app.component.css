@@ -28,6 +28,21 @@ a.unstyle-link {
   color: var(--primary);
 }
 
+.nav-left {
+  flex: 0 0 auto;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.nav-right {
+  flex: 0 0 auto;
+}
+
 @media (max-width: 991px) {
   #nav-items-lg {
     display: none !important;
@@ -102,7 +117,7 @@ a.unstyle-link {
 }
 
 .logo-image {
-  width: 200px;
+  width: 260px;
   height: auto;
   transition: var(--transition);
   display: block;
@@ -151,6 +166,8 @@ a.unstyle-link {
   padding: 0 2rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   transition: var(--transition);
+  position: relative;
+  justify-content: space-between;
 }
 
 #footer {
