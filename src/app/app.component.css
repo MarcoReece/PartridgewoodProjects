@@ -1,68 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* this ensures padding and border are included in the element's total width and height */
-}
-
-.light-text {
-  color: #ffffff;
-}
-
-/* .navbar {
-  height: 80px;
-  background-color: #959ead;
-} */
-
 a {
-  cursor: pointer;
-}
-
-a.unstyle-link:link {
-  color: none;
-  cursor: pointer;
-}
-
-a.unstyle-link:visited {
-  color: none;
-  cursor: pointer;
-}
-
-a.unstyle-link:hover {
-  color: none;
-  cursor: pointer;
-}
-
-a.unstyle-link:active {
-  color: none;
   cursor: pointer;
 }
 
 a.unstyle-link {
   text-decoration: none;
-  color: none;
+  color: inherit;
 }
 
 #nav-items-lg a.unstyle-link {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
   letter-spacing: 0.3px;
+  color: rgba(255,255,255,0.85);
 }
 
 #nav-items-lg a.unstyle-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  color: white;
 }
 
 #nav-items-lg a.unstyle-link.active-route {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.12);
   font-weight: 600;
-  color: white !important;
+  color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #nav-items-lg {
     display: none !important;
   }
@@ -74,184 +40,174 @@ a.unstyle-link {
   }
 }
 
-.active-route {
-  font-weight: 600 !important;
+#contact-button {
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  padding: 0.5rem 1.25rem !important;
+  transition: var(--transition);
+  border: none;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   color: white !important;
+  box-shadow: 0 4px 12px rgba(119, 33, 46, 0.3);
 }
 
-#contact-button {
-  border-radius: 8px;
-  font-weight: 600;
-  padding: 0.6rem 1.5rem !important;
-  transition: all 0.3s ease;
-  border: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+#contact-button a {
+  color: white !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
 }
 
 #contact-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  background-color: #ffffff !important;
-}
-
-#contact-button a {
-  font-size: 0.95rem;
-  letter-spacing: 0.3px;
-}
-
-.active-route-contact {
-  color: #351254 !important;
-  font-weight: 500 !important;
-  text-decoration: underline !important;
+  box-shadow: 0 6px 20px rgba(119, 33, 46, 0.4);
 }
 
 .nav-menu-active {
-  background-color: #dadada;
+  background-color: rgba(255,255,255,0.1);
 }
 
 .dropdown-item {
   padding: 0.75rem 1.5rem;
-  transition: all 0.2s ease;
+  transition: var(--transition);
   font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background-color: var(--primary-100);
   padding-left: 2rem;
-}
-
-.dropdown-item:active {
-  background-color: #9987a9;
+  color: var(--primary);
 }
 
 .dropdown-menu {
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
   border: none;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem;
 }
 
 #nav-items-dropdown {
   padding: 0.5rem;
-  border-radius: 6px;
-  transition: all 0.3s ease;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
 #nav-items-dropdown:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-body {
+.logo-image {
+  width: 200px;
+  height: auto;
+  transition: var(--transition);
+  display: block;
+}
+
+@media (max-width: 400px) {
+  .logo-image {
+    width: 160px;
+  }
+}
+
+.logo-image:hover {
+  opacity: 0.9;
+}
+
+#floating-image {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: var(--transition);
+}
+
+#floating-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.content {
-  flex-grow: 1;
-}
-
-/* nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-} */
-
-/* #footer a {
-  padding: 0 1rem;
-} */
-
-/* #footer {
-  width: 100%;
-  padding: 1.5rem;
-  text-align: center;
-  font-family: "Roboto Slab", serif;
-  background-color: white !important;
-} */
-
-.logo-image {
-  width: 280px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.logo-image:hover {
-  transform: scale(1.05);
-}
-
-#floating-image {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column; /* this ensures that the footer appears below the content */
-  min-height: 100vh;
-}
-
 #navbar {
-  height: 90px;
+  height: var(--nav-height);
   top: 0;
   width: 100%;
-  background-color: #959ead;
-  z-index: 5;
+  background-color: var(--dark);
+  z-index: 50;
   padding: 0 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-#navbar .navbar {
-  padding: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: var(--transition);
 }
 
 #footer {
-  height: 140px; /* replace this with the actual height of your footer */
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  font-family: var(--fonts);
-  background-color: #959ead;
-  z-index: 1000;
+  background-color: var(--dark);
+  font-family: var(--font-heading);
+  z-index: 10;
+  padding: 3rem 2rem 1.5rem;
+}
+
+#footer nav a {
+  color: rgba(255,255,255,0.7) !important;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: var(--transition);
+}
+
+#footer nav a:hover {
+  color: white !important;
 }
 
 footer nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 600px) {
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
   footer nav a {
-    flex: 1 0 auto; /* This allows the link to grow and shrink as needed, with a base size of auto */
-    text-align: center;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  #navbar {
+    padding: 0 1rem;
   }
 }
 
 #content {
   width: 100%;
-  min-height: calc(
-    100vh - var(--nav-height) - var(--footer-height)
-  ); /* calculate the height by removing the heights of the navbar and the footer */
-  background-color: #ffffff;
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height));
+  background-color: var(--white);
 }
 
 #outlet {
-  flex-grow: 1; /* this replaces min-height: 100vh; */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-/* shift the whatsapp icon by the height of the footer */
 #whatsappIcon > img {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }

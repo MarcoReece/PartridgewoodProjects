@@ -1,48 +1,98 @@
-* {
-  margin: 0;
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
-  box-sizing: border-box;
-}
-
 .about-page {
   min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 75%;
-  max-width: 100%;
-  padding-top: 2rem;
+.about-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.88);
+  pointer-events: none;
 }
 
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
+.about-page > div {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
 }
 
 .about-title {
-  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
-  color: #77212e;
-  font-size: 2em;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #222;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
-p {
-  font-size: large;
+.about-title h1 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  position: relative;
+  padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  .about-title {
-    width: 50%;
+.about-title h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.about-page .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.column {
+  padding: 1.5rem;
+  max-width: 800px;
+}
+
+.column h2 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.column p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+  max-width: 700px;
+}
+
+@media (max-width: 768px) {
+  .about-page > div {
+    padding: 2.5rem 1rem;
+  }
+
+  .about-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .column {
+    padding: 1rem;
+  }
+
+  .column h2 {
+    font-size: 1.2rem;
+  }
+
+  .column p {
+    font-size: 0.92rem;
+    line-height: 1.7;
   }
 }

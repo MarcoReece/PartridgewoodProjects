@@ -1,236 +1,102 @@
 <div class="wrapper">
   <div id="content">
-    <nav
-      id="navbar"
-      class="navbar shadow-lg d-flex align-items-center justify-content-between"
-    >
-      <ul
-        id="nav-items-lg"
-        class="d-flex m-0 list-unstyled align-items-center justify-content-between"
-      >
-        <li class="ms-3 me-2">
-          <h1 class="m-0">
-            <a (click)="homeReload()">
-              <img
-                src="assets/pictures/PWPlogo.png"
-                alt="Partridgewood Projects Logo - Building and Renovation Services Johannesburg"
-                class="logo-image"
-              />
-            </a>
-          </h1>
-        </li>
-        <li class="ms-5">
-          <a
-            class="unstyle-link text-light"
-            routerLink="home"
-            routerLinkActive="active-route"
-            >Home</a
-          >
-        </li>
-        <li class="ms-5">
-          <a
-            class="unstyle-link text-light"
-            routerLink="services"
-            routerLinkActive="active-route"
-            >Services</a
-          >
-        </li>
-        <li class="ms-5">
-          <a
-            class="unstyle-link text-light"
-            routerLink="photos"
-            routerLinkActive="active-route"
-            >Photos</a
-          >
-        </li>
-        <li class="ms-5">
-          <a
-            class="unstyle-link text-light"
-            routerLink="about"
-            routerLinkActive="active-route"
-            >About us</a
-          >
-        </li>
-      </ul>
-      <ul
-        id="nav-items-sm"
-        class="m-0 list-unstyled align-items-center justify-content-between d-none w-100"
-      >
-        <li class="ms-3">
-          <h3 class="m-0">
-            <a (click)="homeReload()">
-              <img
-                src="assets/pictures/PWPlogo.png"
-                alt="Partridgewood Projects Logo - Building and Renovation Services Johannesburg"
-                class="logo-image"
-              />
-            </a>
-          </h3>
+    <nav id="navbar" class="d-flex align-items-center justify-content-between">
+      <ul id="nav-items-lg" class="d-flex m-0 list-unstyled align-items-center">
+        <li class="me-4">
+          <a (click)="homeReload()" class="d-block">
+            <img
+              src="assets/pictures/PWPlogo.png"
+              alt="Partridgewood Projects Logo"
+              class="logo-image"
+            />
+          </a>
         </li>
         <li>
-          <div class="dropdown dropstart me-3">
+          <a class="unstyle-link" routerLink="home" routerLinkActive="active-route">Home</a>
+        </li>
+        <li>
+          <a class="unstyle-link" routerLink="services" routerLinkActive="active-route">Services</a>
+        </li>
+        <li>
+          <a class="unstyle-link" routerLink="photos" routerLinkActive="active-route">Photos</a>
+        </li>
+        <li>
+          <a class="unstyle-link" routerLink="about" routerLinkActive="active-route">About us</a>
+        </li>
+      </ul>
+      <button routerLink="contact" id="contact-button" class="btn">
+        <a class="unstyle-link">Free Quote</a>
+      </button>
+
+      <ul id="nav-items-sm" class="m-0 list-unstyled align-items-center justify-content-between d-none w-100">
+        <li>
+          <a (click)="homeReload()">
+            <img
+              src="assets/pictures/PWPlogo.png"
+              alt="Partridgewood Projects Logo"
+              class="logo-image"
+            />
+          </a>
+        </li>
+        <li>
+          <div class="dropdown dropstart">
             <div
               class="cursor-pointer"
               id="nav-items-dropdown"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-list text-light"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <line x1="3" y1="18" x2="21" y2="18"/>
               </svg>
             </div>
-            <ul class="dropdown-menu" aria-labelledby="nav-items-dropdown">
-              <li>
-                <a
-                  class="dropdown-item"
-                  routerLink="home"
-                  routerLinkActive="nav-menu-active"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  routerLink="services"
-                  routerLinkActive="nav-menu-active"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  routerLink="about"
-                  routerLinkActive="nav-menu-active"
-                  >About us</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  routerLink="photos"
-                  routerLinkActive="nav-menu-active"
-                  >Photos</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  routerLink="contact"
-                  routerLinkActive="nav-menu-active"
-                  >Contact us</a
-                >
-              </li>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-items-dropdown">
+              <li><a class="dropdown-item" routerLink="home" routerLinkActive="nav-menu-active">Home</a></li>
+              <li><a class="dropdown-item" routerLink="services" routerLinkActive="nav-menu-active">Services</a></li>
+              <li><a class="dropdown-item" routerLink="about" routerLinkActive="nav-menu-active">About us</a></li>
+              <li><a class="dropdown-item" routerLink="photos" routerLinkActive="nav-menu-active">Photos</a></li>
+              <li><a class="dropdown-item" routerLink="contact" routerLinkActive="nav-menu-active">Contact us</a></li>
             </ul>
           </div>
         </li>
       </ul>
-      <button
-        routerLink="contact"
-        routerLinkActive="active-route-contact"
-        id="contact-button"
-        class="btn btn-light p-1 ps-2 pe-2 me-3"
-      >
-        <a class="unstyle-link text-dark"> Contact us </a>
-      </button>
     </nav>
 
     <div id="outlet">
-      <div>
-        <router-outlet></router-outlet>
-      </div>
+      <router-outlet></router-outlet>
 
       <a
         id="whatsappIcon"
         href="https://api.whatsapp.com/send?phone=27614284712"
+        target="_blank"
+        rel="noopener"
         aria-label="Message Partridgewood Projects on WhatsApp"
       >
         <img
           *ngIf="showFloatingImage"
           id="floating-image"
-          title="Message us on WhatsApp"
+          title="Chat with us on WhatsApp"
           src="assets/pictures/WhatsApp.svg.png"
-          alt="Message Partridgewood Projects on WhatsApp - get a free quote"
+          alt="WhatsApp"
         />
       </a>
     </div>
   </div>
-  <footer class="d-flex align-items-center" id="footer">
-    <div
-      class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8 py-3"
-    >
-      <nav class="flex justify-center sm:justify-center" aria-label="Footer">
-        <a
-          routerLink="home"
-          href="#"
-          style="
-            color: white;
-            text-decoration: none;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-          "
-          class="text-sm leading-5 mx-3"
-          >Home</a
-        >
-        <a
-          routerLink="services"
-          href="#"
-          style="
-            color: white;
-            text-decoration: none;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-          "
-          class="text-sm leading-5 mx-3"
-          >Services</a
-        >
-        <a
-          routerLink="photos"
-          href="#"
-          style="
-            color: white;
-            text-decoration: none;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-          "
-          class="text-sm leading-5 mx-3"
-          >Photos</a
-        >
-        <a
-          routerLink="about"
-          href="#"
-          style="
-            color: white;
-            text-decoration: none;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-          "
-          class="text-sm leading-5 mx-3"
-          >About Us</a
-        >
-        <a
-          routerLink="contact"
-          href="#"
-          style="
-            color: white;
-            text-decoration: none;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-          "
-          class="text-sm leading-5 mx-3"
-          >Contact Us</a
-        >
-      </nav>
-      <div class="mt-1 text-center">
-        <small class="text-center text-xs leading-5" style="color: rgba(255, 255, 255, 0.8);"
-          >&copy; 2026 Partridgewood Projects. All rights reserved.<br>
-          Powered by <a href="https://www.linkedin.com/in/marco-dumbleton-b151aa208/" style="color: rgba(255, 255, 255, 0.8);">M.R.D</a>
-        </small>
-      </div>
+
+  <footer id="footer">
+    <nav aria-label="Footer">
+      <a routerLink="home">Home</a>
+      <a routerLink="services">Services</a>
+      <a routerLink="photos">Photos</a>
+      <a routerLink="about">About Us</a>
+      <a routerLink="contact">Contact Us</a>
+    </nav>
+    <div class="text-center">
+      <small style="color: rgba(255,255,255,0.5); font-size: 0.8rem; letter-spacing: 0.5px;">
+        &copy; 2026 Partridgewood Projects. All rights reserved.
+      </small>
     </div>
   </footer>
 </div>
