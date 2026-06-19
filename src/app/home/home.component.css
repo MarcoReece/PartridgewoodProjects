@@ -225,6 +225,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  align-items: start;
 }
 
 .ba-card {
@@ -232,7 +233,6 @@
   overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
-  aspect-ratio: 16 / 10;
 }
 
 .ba-card:hover {
@@ -242,8 +242,7 @@
 
 .ba-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
