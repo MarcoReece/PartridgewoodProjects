@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Partridgewood Projects",
+  "description": "Professional building, painting, damp proofing, tiling, gutter installation, and door/window fitting services in Johannesburg since 2015. 20+ years of industry experience.",
+  "url": "https://www.partridgewoodprojects.co.za",
+  "image": "https://www.partridgewoodprojects.co.za/assets/pictures/2.jpg",
+  "telephone": "+27614284712",
+  "email": "partridgewoodprojects@gmail.com",
+  "priceRange": "$$",
+  "areaServed": "Johannesburg, Gauteng, South Africa",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "26 Brackenhill Road",
+    "addressLocality": "Johannesburg",
+    "addressRegion": "Gauteng",
+    "postalCode": "2191",
+    "addressCountry": "South Africa"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "07:30",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/PartridgewoodProjects"
+  ],
+  "hasMap": "https://maps.app.goo.gl/NBAb66PP7Pyj8Tmx8",
+  "serviceArea": {
+    "@type": "GeoShape",
+    "polygon": "-25.979174 28.130686, -26.021928 27.987108, -26.101618 27.968627, -26.189876 28.037007, -26.163008 28.084318, -26.110247 28.093928, -26.019936 28.149371"
+  }
+}

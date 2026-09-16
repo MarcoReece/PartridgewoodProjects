@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "painting",
+    "name": "Painting",
+    "heading": "Painting Services",
+    "body": "\n            <p>\n              Painting improves a building's look while protecting its surfaces. Our painting service follows a structured process to ensure a durable, high-quality finish:\n            </p>\n            <ol>\n              <li>\n                <h3>Surface Preparation</h3>\n                <p>\n                  We pressure-wash the home, repair plaster issues, and sand all wood and metal surfaces to create a stable base that is ready for the final coating.\n                </p>\n              </li>\n              <li>\n                <h3>Primer Application</h3>\n                <p>\n                  Where needed, we apply the correct primer to areas like trim, eaves, gutters, doors, and frames, followed by two coats suited to each surface.\n                </p>\n              </li>\n              <li>\n                <h3>Painting</h3>\n                <p>\n                  Once the surfaces have been properly prepared, the appropriate\n                  coating is selected for the interior or exterior surface, including metalwork or wood.\n                </p>\n              </li>\n              <li>\n                <h3>Cleanup</h3>\n                <p>\n                  After the painting is completed, we meticulously clean up the\n                  work area. This includes removing paint splatters, packing up\n                  equipment, and ensuring your property is left in a clean and\n                  tidy condition.\n                </p>\n              </li>\n              <li>\n                <h3>Drying Time</h3>\n                <p>\n                  We allow sufficient time for the paint to dry, ensuring that it\n                  cures properly. The drying time varies depending on the type of\n                  paint used and environmental conditions.\n                </p>\n              </li>\n              <li>\n                <h3>Inspect and Touch Up</h3>\n                <p>\n                  Once dry, we inspect all painted areas and fix any imperfections to ensure a flawless finish.\n                </p>\n              </li>\n            </ol>\n          ",
+    "image": "assets/pictures/painted-house.jpg",
+    "alt": "Professional house painting service in Johannesburg - exterior paint project by Partridgewood Projects",
+    "icon": "\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\"/>\n            <path d=\"M12 3v4a1 1 0 001 1h4\"/>\n          </svg>\n        ",
+    "intro": "Interior and exterior painting for Johannesburg homes and commercial properties. From surface preparation to the final touch-ups, we help refresh and protect your property.",
+    "faqs": [
+      [
+        "What affects a painting quote?",
+        "The property size, condition of the existing surfaces, access and chosen coating all affect the scope. Share photographs and arrange a site visit for a quote."
+      ],
+      [
+        "Can you paint wood and metal as well as walls?",
+        "Our painting work includes wood and metal surfaces, with preparation and coatings selected for the surface."
+      ]
+    ]
+  },
+  {
+    "slug": "damp-proofing",
+    "name": "Damp Proofing",
+    "heading": "Damp and Water Proofing Services",
+    "body": "\n            <p>\n              Waterproofing is essential to protect your structure from moisture\n              damage and to ensure its longevity.\n            </p>\n            <ol>\n              <li>\n                <h3>Plaster Removal</h3>\n                <p>\n                  With rising damp, the plaster is chopped off the wall, to a\n                  height of one metre to expose the bare brick underneath.\n                </p>\n              </li>\n              <li>\n                <h3>Chemical Injection</h3>\n                <p>\n                  A damp proof chemical is injected at the damp proof course level\n                  to saturate bricks under pressure to create a new D.P.C (Damp\n                  proof course).\n                </p>\n              </li>\n              <li>\n                <h3>Slurry and Replastering</h3>\n                <p>\n                  The bare bricks will then be coated with a tanking slurry to\n                  avoid future lateral damp. The area will then be replastered with\n                  42.5 surebuild cement, matching the existing plaster.\n                </p>\n              </li>\n            </ol>\n          ",
+    "image": "assets/pictures/dampproofdiagram.png",
+    "alt": "Damp proofing diagram - chemical injection damp proof course treatment process by Partridgewood Projects Johannesburg",
+    "icon": "\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>\n          </svg>\n        ",
+    "intro": "Rising damp treatment and waterproofing for Johannesburg properties. Speak to Trevor about damp patches, damaged plaster and the work needed to address the affected area.",
+    "faqs": [
+      [
+        "What does your rising damp treatment involve?",
+        "The existing service includes removing affected plaster, chemical injection at the damp proof course, tanking slurry and replastering. The work required depends on the property assessment."
+      ],
+      [
+        "When can the wall be decorated again?",
+        "Drying time depends on the wall and conditions. Ask for a project-specific drying and decorating schedule when the damp is assessed."
+      ]
+    ]
+  },
+  {
+    "slug": "building-alterations",
+    "name": "Building & Alterations",
+    "heading": "Building and Alteration Services",
+    "body": "\n            <p class=\"fs-5 lh-lg\">\n              We provide alterations to your existing home structure as well as\n              adding on to the structure according to building plans provided. We\n              do also install bathrooms which will come with the plumbing\n              included.\n            </p>\n          ",
+    "image": "assets/pictures/building-alterations.jpg",
+    "alt": "Building alterations and home renovations in Johannesburg by Partridgewood Projects",
+    "icon": "\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/>\n            <line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"/>\n            <line x1=\"9\" y1=\"21\" x2=\"9\" y2=\"9\"/>\n          </svg>\n        ",
+    "intro": "Building alterations, extensions and bathroom installations in Johannesburg. We work with building plans provided to adapt existing spaces and add to your property.",
+    "faqs": [
+      [
+        "Do you build extensions?",
+        "Yes. We carry out additions and alterations according to building plans provided. Share your plans when requesting a quote."
+      ],
+      [
+        "Do bathroom installations include plumbing?",
+        "Yes. Our bathroom installation service includes plumbing. Discuss the layout and required work with Trevor before the quote is prepared."
+      ]
+    ]
+  },
+  {
+    "slug": "gutters",
+    "name": "Gutters",
+    "heading": "Gutter Services",
+    "body": "\n            <p class=\"fs-5 lh-lg\">\n              We provide the installation of Chromadek guttering to homes and\n              industrial buildings in Johannesburg. There are multiple choices of colours\n              available.\n            </p>\n          ",
+    "image": "assets/pictures/Gutter-Diagram.png",
+    "alt": "Chromadek gutter installation services in Johannesburg by Partridgewood Projects",
+    "icon": "\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <path d=\"M2 20h20M4 20V8a2 2 0 012-2h12a2 2 0 012 2v12\"/>\n            <path d=\"M8 20v-4a1 1 0 011-1h6a1 1 0 011 1v4\"/>\n          </svg>\n        ",
+    "intro": "Chromadek gutter installation for homes and industrial buildings in Johannesburg, with a choice of colours to suit the property.",
+    "faqs": [
+      [
+        "What type of gutters do you install?",
+        "We install Chromadek guttering for homes and industrial buildings."
+      ],
+      [
+        "Can I choose the colour?",
+        "There are multiple colour options. Ask about available colours and the best fit for your property when requesting a quote."
+      ]
+    ]
+  },
+  {
+    "slug": "tiling",
+    "name": "Tiling",
+    "heading": "Tiling Services",
+    "body": "\n            <p>\n              Tiling adds aesthetic appeal and functionality to various areas of\n              your property. The tiling process consists of these steps:\n            </p>\n            <ol>\n              <li>\n                <h3>Surface Preparation</h3>\n                <p>\n                  We prepare the surface by ensuring it is clean, level, and free\n                  from any imperfections.\n                </p>\n              </li>\n              <li>\n                <h3>Tile Layout</h3>\n                <p>\n                  Our team carefully plans the tile layout, ensuring a visually\n                  pleasing and symmetrical design.\n                </p>\n              </li>\n              <li>\n                <h3>Adhesive and Tile Installation</h3>\n                <p>\n                  Tiles are securely affixed using the appropriate adhesive, with\n                  precise spacing and alignment.\n                </p>\n              </li>\n              <li>\n                <h3>Grout Application</h3>\n                <p>\n                  Grout is applied to fill the gaps between tiles, providing\n                  stability and a finished look.\n                </p>\n              </li>\n              <li>\n                <h3>Sealing and Cleaning</h3>\n                <p>\n                  After the grout has cured, tiles are sealed for protection, and\n                  the entire surface is thoroughly cleaned.\n                </p>\n              </li>\n              <li>\n                <h3>Final Inspection</h3>\n                <p>\n                  We conduct a final inspection to ensure all tiles are correctly\n                  installed and that the finish is flawless.\n                </p>\n              </li>\n            </ol>\n          ",
+    "image": "assets/pictures/floor-tilingjpg.jpg",
+    "alt": "Professional tiling and flooring installation in Johannesburg by Partridgewood Projects",
+    "icon": "\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/>\n            <rect x=\"3\" y=\"9\" width=\"18\" height=\"6\"/>\n          </svg>\n        ",
+    "intro": "Floor and wall tiling for Johannesburg properties, including surface preparation, tile layout, installation, grouting and finishing.",
+    "faqs": [
+      [
+        "What preparation is included?",
+        "The surface is prepared so it is clean and level, and the tile layout is planned before installation."
+      ],
+      [
+        "What should I include in a tiling enquiry?",
+        "Tell us whether you need floor or wall tiles, the approximate area and whether existing tiles need to be addressed. Photographs help explain the current condition."
+      ]
+    ]
+  },
+  {
+    "slug": "doors-windows",
+    "name": "Doors & Windows",
+    "heading": "Installation of Doors and Windows",
+    "body": "\n            <p class=\"fs-5 lh-lg\">\n              We specialize in the expert installation of doors and windows to\n              enhance the functionality, security, and aesthetics of your\n              property. Our professional installation services encompass a variety\n              of options, including aluminum windows, doors, sliding doors, and\n              stacking doors. Our installation process is designed to ensure\n              precision and quality.\n            </p>\n          ",
+    "image": "assets/pictures/29.jpg",
+    "alt": "Door and window installation services in Johannesburg - aluminium sliding doors by Partridgewood Projects",
+    "icon": "\n          <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n            <rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"2\"/>\n            <line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"22\"/>\n            <line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"22\"/>\n            <line x1=\"2\" y1=\"8\" x2=\"22\" y2=\"8\"/>\n            <line x1=\"2\" y1=\"16\" x2=\"22\" y2=\"16\"/>\n          </svg>\n        ",
+    "intro": "Aluminium windows, doors, sliding doors and stacking doors installed in Johannesburg. Talk to us about the openings, layout and finish you need.",
+    "faqs": [
+      [
+        "Which doors and windows do you install?",
+        "Our services include aluminium windows and doors, sliding doors and stacking doors."
+      ],
+      [
+        "What information helps with a quote?",
+        "Share photographs of the existing openings, approximate dimensions and the type of door or window you want. Final requirements can be discussed during the assessment."
+      ]
+    ]
+  }
+]
